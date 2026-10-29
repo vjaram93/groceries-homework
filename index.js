@@ -56,11 +56,11 @@ function getCategories(items) {
  */
 function getSkus(items) {
   // TODO
-  return INVENTORY.map((item) => item.id + item.name + item.name.length);
+  return INVENTORY.map((item) => `${item.id}#${item.name}#${item.name.length}`);
 }
 
 // Test:
-// console.log(getSkus(INVENTORY));
+console.log(getSkus(INVENTORY));
 
 /**
  * @param {Item[]} items
